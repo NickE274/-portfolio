@@ -1,0 +1,61 @@
+footer {
+
+    &  section {
+        background: #dedede;
+
+        &  .info {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__copy {
+                
+                &  p {
+                    margin: 0;
+                    font-size: 18px;
+                    @include text_main-p;
+                    @include color_text;
+                }
+            }
+
+            &__social {
+                display: flex;
+
+                &  a {
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: none;
+                    
+                    &:hover {
+                        fill: #FFFFFF;
+                        border-radius: 50%;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+
+                    &:nth-last-child(4):hover{
+                        background: #3d548e;
+                    }
+
+                    &:nth-last-child(3):hover{
+                        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                    }
+
+                    &:nth-last-child(2):hover{
+                        background: #e61a23;
+                    }
+
+                    &:nth-last-child(1):hover{
+                        background: #1c9cea;
+                    }
+                }
+            }
+        }
+    }
+}

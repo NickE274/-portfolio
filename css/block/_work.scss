@@ -1,0 +1,115 @@
+@mixin transition {
+    transition: background 0.5s linear;
+}
+
+.work {
+    text-align: center;
+    padding: 105px 0 90px 0;
+    
+    &  h3 {
+        margin-bottom: 40px;
+        font-size: 42px;
+        line-height: 1.23;
+        font-weight: 600;
+        @include color_text;
+    }
+
+    &  p {
+        max-width: 560px;
+        margin: 0 auto;
+        font-size: 24px;
+        @include text_main-p;
+        @include color_text;
+    }
+}
+
+.examples {
+    padding-bottom: 135px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__brand {
+        padding: 0px 20px 0px 20px;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        font-size: initial;
+        width: 50%;
+
+        &:nth-child(-n+2){
+            margin-bottom: 90px;
+        }
+
+
+        &  a {
+            text-decoration: none;
+            @include color_text;
+            margin-bottom: 20px;
+
+
+                &  div {
+                    margin-bottom: 20px;
+                    padding-bottom: 56%;
+                }
+
+                &  .bmw{
+                    background: url(/img/work/bmw.jpg);
+                    @include transition;
+                    @include bg_img;
+
+                    &:hover {
+                        background: url(/img/work/bmw_h.jpg);
+                        @include bg_img;
+                    }
+                }
+
+                &  .pontiac{
+                    background: url(/img/work/pontiac.jpg);
+                    @include transition;
+                    @include bg_img;
+
+                    &:hover {
+                        background: url(/img/work/pontiac_h.jpg);
+                        @include bg_img;
+                    }
+                }
+
+                &  .jaguar{
+                            background: url(/img/work/jaguar.jpg);
+                            @include transition;
+                            @include bg_img;
+
+                            &:hover {
+                                background: url(/img/work/jaguar_h.jpg);
+                                @include bg_img;
+                            }
+                }
+
+                &  .porshe{
+                            background: url(/img/work/porshe.jpg);
+                            @include transition;
+                            @include bg_img;
+
+                            &:hover {
+                                background: url(/img/work/porshe_h.jpg);
+                                @include bg_img;
+                            }
+                }
+
+            &  h4 {
+                font-size: 24px;
+                line-height: 1.35;
+                font-weight: 700;
+            }
+
+            &  p {
+                font-family: 'Roboto',Arial,sans-serif;
+                margin: 8px 0 0 0;
+                font-size: 14px;
+                @include text_main-p;
+            }
+        }
+    }
+}

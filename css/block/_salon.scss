@@ -1,0 +1,102 @@
+.about{
+    background-color: #dedede;
+    padding: 135px 0 195px 0;
+    position: relative;
+
+    &  .salon {
+        display: flex;
+
+        &__alignment {
+            display: inline;
+            float: left;
+            margin: 0 20px 0 20px;
+            width: 100%;
+        
+
+            &--text {
+                display: flex;
+                align-items: center;
+                height: 100%;
+    
+    
+                &  h6 {
+                    font-size: 42px;
+                    line-height: 1.23;
+                    font-weight: 600;
+                    @include color_text;
+                }
+
+                &  p {
+                    margin-top: 34px;
+                    font-size: 20px;
+                    @include text_main-p;
+                    @include color_text;
+                }
+            }
+    
+    
+            &__foto {   
+    
+                &__container {
+                    display: flex;
+                    font-size: 0px;
+    
+                    &--left {
+                        width: 60%;
+                        padding-right: 10px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        vertical-align: top;
+    
+                        &--img {
+                            background-image: url(/img/salon/salon_man.jpg);
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px ;
+                            padding-bottom: 135%;
+                            @include bg_img;
+                        }
+    
+    
+                    }
+    
+                    &--right {
+                        width: 40%;
+                        padding-left: 10px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        vertical-align: top;
+    
+                        &--car {
+                            position: relative;
+                            margin-top: 40%;
+    
+                            &--img {
+                                background-image: url(/img/salon/salon_car.jpg);
+                                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+                                padding-bottom: 120%;
+                                @include bg_img;
+                            }
+                        }
+
+
+                        &--cabin {
+                            position: relative;
+                            width: 100%;
+                            margin-top: 20px;
+                            padding-bottom: 100%;
+                        
+                            &--img {
+                                background-image: url(/img/salon/salon.jpg);
+                                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+                                position: absolute;
+                                padding-bottom: 100%;
+                                width: 160%;
+                                right: 50%;
+                                @include bg_img;
+                            }
+                        }                            
+                    }
+                }
+            }
+        }
+    }
+}

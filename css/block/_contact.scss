@@ -1,0 +1,67 @@
+.contact {
+    
+    &__text {
+        padding-top: 120px;
+        margin-bottom: 105px;
+        text-align: center;
+
+        &  h3 {
+            font-size: 42px;
+            line-height: 1.23;
+            font-weight: 600;
+            margin-bottom: 40px;
+            @include color_text;
+        }
+
+        &  p {
+            max-width: 560px;
+            margin: 0 auto;
+            font-size: 24px;
+            @include text_main-p;
+            @include color_text;
+        }
+
+        &  a {
+            text-decoration: none;
+            font-size: 24px;
+            @include text_main-p;
+            @include color_text;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 120px;
+
+
+        div {
+            width: 33%;
+            text-align: center;
+            padding: 0 25px;
+            height: auto;
+
+            svg {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 30px;
+                padding-top: 0;
+                @include color_text;
+            }
+
+            h5 {
+                font-size: 24px;
+                line-height: 1.35;
+                font-weight: 600;
+                padding-bottom: 20px;
+                @include color_text;
+            }
+
+            p {
+                font-size: 18px;
+                @include text_main-p;
+                @include color_text;
+            }
+        }
+    }
+}

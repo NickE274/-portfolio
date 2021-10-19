@@ -1,0 +1,74 @@
+@media screen and (max-width: 426px) {
+
+    .about {
+        padding-bottom: 60px;
+        &  .salon {
+            &__alignment {
+                &__foto {
+                    &__container {
+                        &--right {
+                            &--cabin {
+                                &--img {
+                                    width: 211%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .work {
+        &  p  {
+            font-size: 19px;
+        }
+    }
+
+    .services {
+        &__text {
+            padding-top: 40px;
+            &  p {
+                font-size: 19px;
+
+                &  a {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .contact {
+
+        &__text {
+            p,a {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .examples {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 60px;
+
+        &__brand {
+            width: 100%;
+            
+            &:not(:last-child) {
+                margin-bottom: 90px;
+            }
+        }
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .map {
+        height: 320px;
+    }
+}

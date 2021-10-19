@@ -1,0 +1,124 @@
+@media screen and (max-width: 768px) {
+
+    .containers {
+        padding: 0 20px;
+    }
+
+    header {
+
+        &  nav {
+            justify-content: flex-start;
+
+            &  div {
+                &:not(:nth-child(3)) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 6%;
+                }
+
+                &  a {
+
+                    &  img {
+                        width: 150px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        &  .bg {
+            &  h1 {
+                width: 70%;
+                font-size: x-large;
+            }
+        }
+    }
+
+    main {
+
+        &  .about {
+
+            &  .salon {
+                flex-direction: column;
+
+                &__alignment {
+                    margin: 0;
+
+                    &--text {
+                        margin-bottom: 40px;
+                    }
+
+                    &__foto {
+
+                        &__container {
+
+                            &--left {
+                                width: 50%;
+                            }
+
+                            &--right {
+                                width: 50%;
+
+                                &--car {
+                                    margin-top: 0;
+                                    
+                                    &--img {
+                                        padding-bottom: 135%;
+                                    }
+                                }
+
+                                &--cabin {
+                                    
+                                    &--img {
+                                        width: 206%;
+                                        right: 0%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &  .work {
+            &  p {
+                max-width: 100%;
+            }
+        }
+
+        &  .contact {
+
+            &__icon {
+                flex-direction: column;
+                align-items: center;
+
+                &  div {
+                    width: 100%;
+
+                    &:not(:last-child) {
+                        margin-bottom: 80px;
+                    }
+
+                    &  h5 {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        &  section {
+           &  .info {
+               &__copy {
+                   &  p {
+                       font-size: 85%;
+                   }
+               }
+           } 
+        }
+    }
+}

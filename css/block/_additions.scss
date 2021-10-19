@@ -1,0 +1,15 @@
+@mixin text_main-p {
+    line-height: 1.50;
+    font-weight: 300;
+}
+
+@mixin bg_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin color_text {
+    color: #000;
+    stroke: #000;
+}

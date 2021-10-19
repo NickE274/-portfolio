@@ -1,0 +1,43 @@
+@import "block/additions";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Didot', serif;
+}
+
+.prune {
+    fill: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.cls-1 {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 9px;
+}
+
+@import "block/header";
+@import "block/salon";
+@import "block/work";
+@import "block/services";
+@import "block/contact";
+@import "block/map";
+@import "block/footer";
+@import "media/tablet";
+@import "media/mobile";
